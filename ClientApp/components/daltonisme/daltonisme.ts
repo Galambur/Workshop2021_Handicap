@@ -1,7 +1,8 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
 
+
 @Component
-export default class MemberComponent extends Vue {
+export default class DaltonismeComponent extends Vue {
 
 }
