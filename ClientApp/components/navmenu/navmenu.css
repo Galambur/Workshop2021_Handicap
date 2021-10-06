@@ -65,3 +65,11 @@
         text-overflow: ellipsis;
     }
 }
+
+.instagram img{
+    height: 5vh;
+    width: 5vh;
+    margin-top: 74.3vh;
+    margin-left: 25.6vh;
+    cursor: pointer;
+}

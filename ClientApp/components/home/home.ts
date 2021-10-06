@@ -7,10 +7,6 @@ export default class HomeComponent extends Vue {
     public password:string="";
     public verify_menu() {
         console.log(this.identifiant + this.password);
-        if  (this.identifiant = "identifiant" && this.password = "password") {
-            
-        }
-
         
         }
     }
