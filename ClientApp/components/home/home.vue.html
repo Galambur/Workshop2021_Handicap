@@ -5,13 +5,14 @@
         </h1>
         <div>
             <label for="Identifiant">Identifiant :</label>
-            <input type="text" id="name" name="user_name" placeholder="Entrez votre identifiant">
+            <input v-model="identifiant" type="text" id="name" name="user_name" placeholder="Entrez votre identifiant">
         </div>
         <div>
             <label for="Mot de Pasee">Mot de Passe :</label>
-            <input type="password" id="password" name="password" placeholder="Entrez votre Mot de Passe">
+            <input v-model="password" type="password" id="password" name="password" placeholder="Entrez votre Mot de Passe">
         </div>
-        <input class="bouton" type="button" value="Valider">
+        <input v-on:click="verify_menu()" class="bouton" type="button" value="Valider">
     </form>
 </template>
-<style src="./home.css"/>
+<style src="./home.css"></style>
+<script src="./home.ts"></script>
