@@ -8,6 +8,7 @@
 .main-nav li a.router-link-active:focus {
     background-color: #4189C7;
     color: white;
+    font-weight: bold;
 }
 
 /* Keep the nav menu independent of scrolling and on top of other items */
@@ -19,11 +20,19 @@
     z-index: 1;
 }
 
-@media (min-width: 768px) {
+.navbar{
+    width: 100%;
+}
+
+.navbar-inverse{
+    background-color: #26262e;
+}
+
+@media (min-width: 50px) {
     /* On small screens, convert the nav menu to a vertical sidebar */
     .main-nav {
         height: 100%;
-        width: calc(25% - 20px);
+        width: 15%;
     }
     .main-nav .navbar {
         border-radius: 0px;
@@ -51,7 +60,6 @@
     }
     .main-nav .navbar a {
         /* If a menu item's text is too long, truncate it */
-        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

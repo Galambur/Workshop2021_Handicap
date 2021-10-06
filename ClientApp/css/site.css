@@ -1,6 +1,24 @@
-@media (max-width: 767px) {
-    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
-    body {
-        padding-top: 50px;
-    }
+.container {
+    display: flex;
+    padding: 0%;
+    margin: 20px 0 0 0 ;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1600px;
+    position: fixed;
+    right:20px;
+}
+
+.container .description{
+    font-size: 1.5em;
+    margin: 0 40px 0 0;
+}
+
+.img {
+    width: 600px;
+}
+
+.titre {
+    font-size: 100px;
+    text-align: center;
 }
