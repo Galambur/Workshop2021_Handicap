@@ -1,15 +1,23 @@
 <template>
     <div>
-        <h1>
-            Cataracte
-        </h1>
-        <p>
-            C’est l’opacification partielle ou totale du cristallin, lentille convergente située à l’intérieur de l’œil. Cette opacification est responsable d’une baisse progressive de la vue, au début accompagnée de gêne à la lumière.
-        </p>
-        <div class="image">
-            <img src="../../../image/Newletter_cataract.jpg">
+        <div class="container">
+            <div class="texte">
+            <h1 class="titre">Cataracte</h1>
+            <div class="description">
+                <p>
+                    C’est l’opacification partielle ou totale du cristallin, lentille convergente située à l’intérieur de l’œil. Cette opacification est responsable d’une baisse progressive de la vue, au début accompagnée de gêne à la lumière.
+                </p>
+                <button class="btn btn-primary" v-on:click="changeDef()">Changer la définition</button>
+            </div>
+            
+            </div>
+            <div class="image">
+                <img v-if="!definition" class="img" src="../../../image/Newletter_cataract.jpg">
+                <img v-if="definition" class="img" src="../../images/brochure.png">
+            </div>
         </div>
+        
     </div>
 </template>
+<style src="../../css/site.css"></style>
 <script src="./cataracte.ts"></script>
-<style src="./cataracte.css"/>

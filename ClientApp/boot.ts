@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes = [
     { path: '/', component: require('./components/home/home.vue.html') },
     { path: '/daltonisme', component: require('./components/daltonisme/daltonisme.vue.html') },
-    { path: '/cataracte', component: require('./components/Cataracte/cataracte.vue.html') }
+    { path: '/cataracte', component: require('./components/Cataracte/cataracte.vue.html') },
     { path: '/dmla', component: require('./components/dmla/dmla.vue.html') }
 ];
 
