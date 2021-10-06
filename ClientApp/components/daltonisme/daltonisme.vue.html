@@ -1,30 +1,51 @@
 
   <template>
     <div>
-        <div class="container">
+        <div class="">
+            
             <div class="texte">
-                <h1 class="titre">Cataracte</h1>
+                <h1 class="titre">Daltonisme</h1>
                 <div class="description">
-                    <p>
-                        C’est l’opacification partielle ou totale du cristallin, lentille convergente située à l’intérieur de l’œil. Cette opacification est responsable d’une baisse progressive de la vue, au début accompagnée de gêne à la lumière.
+                    <p class="text-justify">
+                        Le daltonisme se manifeste sous différentes formes, selon le nombre de « cônes » présents dans votre œil et le nombre d’entre eux qui sont encore parfaitement fonctionnels. On parle de trichromatie lorsque les trois types de cônes, les cônes S (S comme short), les cônes M (M comme middle) et les cônes L (L comme long), fonctionnement correctement, vous offrant une vision normale des couleurs.
                     </p>
-                    <button class="btn btn-primary" v-on:click="changeDef()">Changer la définition</button>
+                </div>
+                <h2>Trichromatie anormale</h2>
+                <div class="description">
+                    <p class="text-justify">On parle de trichromatie anormale lorsque la lumière est perçue 
+                        par les trois types de cônes, dont un ne fonctionne pas correctement, 
+                        induisant une sensibilité réduite à une certaine couleur en fonction du cône 
+                        affecté : </p>
                 </div>
             </div>
-            
             <div class="image">
-                <section v-if="definition == '0'">
-                    <h2>def1</h2>
-                    <input v-on:click="changeDef" type="image" src="../../../image/Newletter_cataract.jpg" alt="">
+                <section v-if="definition == 0">
+                    <h2>Normal</h2>
+                    <img v-on:click="changeDef()" type="image" src="../../../image/normal.png" alt="">
+                    <p class="text-justify">Vue normale.</p>
                 </section>
-                <section v-if="definition == '1'">
-                    <h2>def2</h2>
-                    <input v-on:click="changeDef" type="image" src="../../../image/Newletter_cataract.jpg" alt="">
+                <section v-if="definition == 1">
+                    <h2>Deutéranomalie</h2>
+                    <img v-on:click="changeDef()" type="image" src="../../../image/deute.png" alt="">
+                    <p class="text-justify">Mutation des récepteurs qui permettent 
+                        d’identifier les longueurs d’onde moyennes, celles qui concernent la 
+                        couleur verte. Il s’agit du type le plus commun de trichromatie anormale. </p>
+                </section>
+                <section v-if="definition == 2">
+                    <h2>Protanomalie</h2>
+                    <img v-on:click="changeDef()" type="image" src="../../../image/proto.png" alt="">
+                    <p class="text-justify">Mutation des récepteurs qui permettent d’identifier les longueurs d’onde longues, celles qui concernent la couleur rouge.</p>
+                </section>
+                <section v-if="definition == 3">
+                    <h2>Tritanomalie</h2>
+                    <img v-on:click="changeDef()" type="image" src="../../../image/trita.png" alt="">
+                    <p class="text-justify">Mutation des récepteurs qui permettent d’identifier les longueurs d’onde courtes, celles qui concernent la couleur bleue. La tritanomalie est la forme de daltonisme la plus rare.</p>
                 </section>
             </div>
         </div>
     </div>
 </template>
+<style src="./daltonisme.css"></style>
     <script src="./daltonisme.ts"></script>
 
 
