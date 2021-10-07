@@ -1,17 +1,7 @@
-.logo img{
-  height: 50vh;
-  width: 50vh;
-  cursor: default;
-  margin-left: 110vh;
-  margin-top: -90vh;
+.logo img {
+  width: 600px;
 }
 
-h1{
-  margin-left: 50vh;
-  font-size: 8vh;
-}
-
-p{
-  font-size: 2vh;
-  margin-top: 10vh;
+.text-accueil {
+  font-size: 20px;
 }
