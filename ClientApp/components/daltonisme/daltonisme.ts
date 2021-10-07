@@ -7,11 +7,11 @@ import { Component } from "vue-property-decorator";
 @Component
 export default class DaltonismeComponent extends Vue {
     public visions : Array<string> = new Array('Normale', 'Deutéranomalie', 'Protanomalie', 'Tritanomalie');
-    public visionPlus : string = "Normale";
-    public visionMoins : string = "Protanomalie";
-    public visionActuel : string = "Deutéranomalie";
+    public visionPlus : string = "Deutéranomalie";
+    public visionMoins : string = "Tritanomalie";
+    public visionActuel : string = "Normale";
 
-    public definition : number = 1;
+    public definition : number = 0;
 
     
     
