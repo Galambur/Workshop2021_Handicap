@@ -22,3 +22,11 @@
     font-size: 100px;
     text-align: center;
 }
+
+h1 {
+    font-family:"Berlin Sans FB Demi"; 
+}
+
+.btn{
+    background-color: #126595;
+}

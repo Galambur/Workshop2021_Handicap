@@ -1,18 +1,40 @@
 <template>
-    <form method="post">
-        <h1>
-            Se Connecter
-        </h1>
-        <div>
-            <label for="Identifiant">Identifiant :</label>
-            <input v-model="identifiant" type="text" id="name" name="user_name" placeholder="Entrez votre identifiant">
+    <div> 
+        <div class="container" style="margin-top: 150px;">
+            <div class="texte">
+                <h1 class="titre">
+                    Qui sommes-nous ?
+                </h1>
+                <br>
+                <p class="text-justify text-accueil">
+                    <span style="font-weight: bold; padding:0 0 0 60px;">   HandiHelp</span> veut pouvoir répondre à 
+                    la problématique d’accessibilité de certains supports numériques partagés en entreprise, tels des 
+                    graphiques utilisant des couleurs mals décernés par les personnes atteintes de daltonisme, des mails 
+                    ou tout type de texte utilisant une police trop complexe, trop petite, avec des formes atypiques qui 
+                    resteront illisibles pour les personnes victimes de déficiences visuelles. 
+                    ns un premier temps, l’outil permet l’immersion vers la malvoyance, nous avons l’ambition de développer
+                     vers d’autres pathologies, d’autres handicapes d’ici fin 2021.
+                <br><br>
+                    <span style="padding:0 0 0 60px;">Nous</span> avons donc abordé la problématique sous le prisme de la 
+                    sensibilisation par immersion. En effet, nous avons choisi de vous faire vivre les difficultés que 
+                    peuvent rencontrer les personnes malvoyantes à travers notre outil Handihelp développé en interne par 
+                    notre équipe de développeurs exceptionnels, qualitatifs et redoutables dans le milieux du développement.
+                     Notre équipe de spécialistes a choisi de développer en langage <span style="font-weight: bold;">
+                        TypeScript, Vue js</span>, similaire à Javascript mais en plus simple et plus lisible, couplé au 
+                        framework vue.js qui rajoute de l’interactivité à l’outil.
+                    Daoté financement nous sommes entièrement subventionnables (jusqu’a 20000€) par les organismes CCAH, 
+                    fonds HS et la Fondation de France.
+                </p>
+            </div>
+            
+            <div class="image">
+                <div class="logo">
+                    <img src="../../images/logo_site.png">
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="Mot de Pasee">Mot de Passe :</label>
-            <input v-model="password" type="password" id="password" name="password" placeholder="Entrez votre Mot de Passe">
-        </div>
-        <input v-on:click="verify_menu()" class="bouton" type="button" value="Valider">
-    </form>
+        
+    </div>
 </template>
+<style src="../../css/site.css"></style>
 <style src="./home.css"></style>
-<script src="./home.ts"></script>
