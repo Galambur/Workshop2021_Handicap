@@ -1,7 +1,7 @@
 
   <template>
     <div>
-        <div class="">
+        <div class="container">
             
             <div class="texte">
                 <h1 class="titre">Daltonisme</h1>
@@ -18,11 +18,21 @@
                         affecté : </p>
                 </div>
             </div>
+            
             <div class="image">
+                
+                <div class="buttDalto">
+                    <button v-on:click="changeDef()" v-text="visionPlus" class="btn btn-secondary"></button>
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <button v-text="visionActuel" class ="btn btn-primary"></button>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <button v-on:click="changeDown()" v-text="visionMoins" class="btn btn-secondary"></button>
+                </div>
+
                 <section v-if="definition == 0">
                     <h2>Normal</h2>
                     <img v-on:click="changeDef()" type="image" src="../../../image/normal.png" alt="">
-                    <p class="text-justify">Vue normale.</p>
+                    <p class="">Vue normale.</p>
                 </section>
                 <section v-if="definition == 1">
                     <h2>Deutéranomalie</h2>
@@ -45,6 +55,7 @@
         </div>
     </div>
 </template>
+<script src="/node_modules/vue-cookie/build/vue-cookie.js'"></script>
 <style src="./daltonisme.css"></style>
     <script src="./daltonisme.ts"></script>
 
