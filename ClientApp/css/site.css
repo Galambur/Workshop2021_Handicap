@@ -21,12 +21,18 @@
 .titre {
     font-size: 100px;
     text-align: center;
+    color:#126595;
 }
 
+@import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
 h1 {
-    font-family:"Berlin Sans FB Demi"; 
+    font-family:"Berlin Sans FB Light"; 
 }
 
 .btn-primary{
     background-color: #126595;
+}
+
+.sous-titre{
+    color:#ef5251;
 }
