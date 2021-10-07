@@ -66,26 +66,19 @@
     }
 }
 
-.instagram img{
+.icons {
+    display: flex;
+    margin-left: 21%;
+}
+
+.icons img {
+    margin:5px;
+    cursor: pointer;
     height: 5vh;
     width: 5vh;
-    margin-top: 68.5vh;
-    margin-left: 25.2vh;
-    cursor: pointer;
 }
 
-.linkedin img{
-    height: 4.7vh;
-    width: 5vh;
-    margin-top: -7.2vh;
-    margin-left: 18vh;
-    cursor: pointer;
-}
-
-.facebook img{
-    height: 4.7vh;
-    width: 5vh;
-    margin-top: -11.5vh;
-    margin-left: 11vh;
-    cursor: pointer;
+.deco {
+    margin-top: 61.5vh;
+    text-align: center;
 }
