@@ -9,6 +9,7 @@ const routes = [
     { path: '/daltonisme', component: require('./components/daltonisme/daltonisme.vue.html') },
     { path: '/cataracte', component: require('./components/Cataracte/cataracte.vue.html') },
     { path: '/dmla', component: require('./components/dmla/dmla.vue.html') },
+    { path: '/dyslexie', component: require('./components/dyslexie/dyslexie.vue.html') },
 ];
 
 new Vue({
